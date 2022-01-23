@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>Daily ToDoList</title>
+  </head>
+  <body>
+    <div class="weather js-weather"></div>
+    <div class="contanier"></div>
+    <div class="clock-div js-clock">
+      <h1 id="clock">00:00:00</h1>
+    </div>
+    <div class="greeting-div js-greeting-div">
+      <form class="greeting js-greeting-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What's your name?"
+        />
+      </form>
+      <h4 class="greetings js-greetings"></h4>
+    </div>
+    <div class="todo-div js-todo-div">
+      <form class="js-todo-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="To do List"
+        />
+      </form>
+      <div class="todos">
+        <h1>Pending</h1>
+        <ul class="todos__pending"></ul>
+        <h1>Finished</h1>
+        <ul class="todos__finished"></ul>
+      </div>
+    </div>
+    <script src="src/clock.js"></script>
+    <script src="src/Login.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/random_img.js"></script>
+  </body>
+</html>
